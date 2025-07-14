@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f0f8ff;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #004080;
+}
+
+#malla-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.semestre {
+  background: #e1f0ff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 64, 128, 0.2);
+}
+
+.semestre h2 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.materia {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 6px 0;
+  background: #cce4ff;
+  border: 1px solid #0073e6;
+  user-select: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.materia.aprobada {
+  background: #4caf50;
+  color: white;
+  text-decoration: line-through;
+}
+
+.materia.bloqueada {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  text-decoration: none;
+  border-color: #999;
+}
+
+.materia .creditos {
+  float: right;
+  font-weight: bold;
+  color: #004080;
+}
